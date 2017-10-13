@@ -17,6 +17,9 @@ h1 {
 }
 
 @media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.75rem
+    }
     .sub-h1 {
         font-size: 1.15rem
     }
