@@ -16,6 +16,12 @@ h1 {
     font-size: 1.925rem
 }
 
+@media only screen and (max-width: 500px) {
+    .sub-h1 {
+        font-size: 1.15rem
+    }
+}
+
 h3,
 h4,
 h5 {
@@ -34,6 +40,7 @@ h5 {
 label {
     margin-bottom: .95rem
 }
+
 a {
     color: #00D2FC
 }
@@ -48,6 +55,7 @@ a:hover {
 li {
     padding-bottom: .875rem
 }
+
 .lead {
     font-size: 1.35rem;
     padding-bottom: 1rem
