@@ -1,0 +1,132 @@
+body {
+    font-family: 'Overpass Mono', monospace;
+    font-size: 17px;
+    color: #5e7f8a;
+    border: 1.525rem solid #fff
+}
+
+h1 {
+    color: #fcfcfb;
+    font-size: 4rem;
+    font-weight: 700
+}
+
+.sub-h1 {
+    color: #fcfcfb;
+    font-size: 1.925rem
+}
+
+h3,
+h4,
+h5 {
+    color: #334A52;
+    font-weight: 700
+}
+
+h3 {
+    padding-bottom: 4rem
+}
+
+h5 {
+    padding-bottom: 1.25rem
+}
+
+label {
+    margin-bottom: .95rem
+}
+a {
+    color: #00D2FC
+}
+
+a:hover {
+    color: #74e8ff;
+    -webkit-transition: 1.2s ease;
+    -o-transition: 1.2s ease;
+    transition: 1.2s ease
+}
+
+li {
+    padding-bottom: .875rem
+}
+.lead {
+    font-size: 1.35rem;
+    padding-bottom: 1rem
+}
+
+.big--white {
+    /*    color: #fcfcfb;*/
+    font-size: 2.25rem;
+    font-weight: 700
+}
+
+.small--white {
+    /*    color: #fcfcfb;*/
+    font-size: 1.55rem
+}
+
+.navbar-text {
+    color: #334A52;
+    font-size: 1.275rem;
+    font-weight: 700
+}
+
+#intro {
+    height: 70vh;
+}
+
+#intro .row {
+    padding-top: 25%
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.color--back {
+    background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+#about--me {
+    padding-top: 10vh;
+    padding-bottom: 10vh
+}
+
+#about--skills {
+    padding-top: 10vh;
+    padding-bottom: 18vh
+}
+
+.about--job > p {
+    font-size: 0.85rem
+}
+
+.about--job {
+    padding-bottom: 2rem
+}
+
+#about--get-in-touch {
+    background-color: #F8F9F9;
+    padding-top: 18vh;
+    padding-bottom: 10vh
+}
+
+/*
+#about--get-in-touch a {
+    color: #fcfcfb
+}
+*/
+
+.social--net {
+    padding: 15px 0px 0px 0px
+}
+
+.u-can-do-it {
+    position: absolute;
+    -webkit-transform: translate3d(0px, -280px, 0px);
+    transform: translate3d(0px, -340px, 0px);
+    width: 80%;
+    padding-bottom: 2rem
+}
