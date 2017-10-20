@@ -16,14 +16,80 @@ h1 {
     font-size: 1.925rem
 }
 
+.sub-h1--small {
+    color: #fcfcfb;
+    font-size: 1.45rem
+}
+
+
 @media only screen and (max-width: 500px) {
     h1 {
         font-size: 2.35rem
     }
-    .sub-h1 {
+    .sub-h1,
+    .sub-h1--small {
         font-size: 1.15rem
     }
 }
+
+.vibrate-2 {
+	-webkit-animation: vibrate-2 0.65s cubic-bezier(0.755, 0.050, 0.855, 0.060) infinite alternate both;
+	        animation: vibrate-2 0.65s cubic-bezier(0.755, 0.050, 0.855, 0.060) infinite alternate both;
+}
+
+@-webkit-keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-2 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  40% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  60% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
 
 h3,
 h4,
