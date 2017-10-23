@@ -165,14 +165,6 @@ ul {
     padding-left: 0px
 }
 
-/*
-.color--back {
-    background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
-    background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%)
-}
-*/
-
 #about--me {
     padding-top: 10vh;
     padding-bottom: 10vh
