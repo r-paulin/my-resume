@@ -1,32 +1,27 @@
 body {
-    font-family: 'Overpass Mono', monospace;
-    font-size: 17px;
-    color: #5e7f8a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #797D7F;
+    line-height: 1.89;
     border: 1.525rem solid #fff
 }
 
 h1 {
-    color: #fcfcfb;
-    font-size: 3.75rem;
-    font-weight: 700;
-}
-
-.sub-h1 {
-    color: #fcfcfb;
-    font-size: 1.925rem
+    font-weight: 400;
+    font-size: 2.75rem;
+    line-height: 1.33
 }
 
 .sub-h1--small {
-    color: #fcfcfb;
+    color: #440381;
     font-size: 1.45rem
 }
-
 
 @media only screen and (max-width: 500px) {
     h1 {
         font-size: 2.35rem
     }
-    .sub-h1,
     .sub-h1--small {
         font-size: 1.15rem
     }
@@ -91,32 +86,43 @@ h1 {
     }
 }
 
-
-h3,
+h1,
+h2,
 h4,
 h5 {
-    color: #334A52;
-    font-weight: 700
+    color: #212529;
+    font-weight: 300;
+
 }
 
 h3 {
+    font-size: 2.1rem;
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    color: #212529;
     padding-bottom: 4rem
 }
 
+h4 {
+    font-weight: 1.725rem;
+}
+
 h5 {
+    font-size: 1.425rem;
     padding-bottom: 1.25rem
 }
 
 label {
+    font-size: 1rem;
     margin-bottom: .95rem
 }
 
 a {
-    color: #00D2FC
+    color: #440381;
 }
 
 a:hover {
-    color: #74e8ff;
+    color: #663097;
     -webkit-transition: 1.2s ease;
     -o-transition: 1.2s ease;
     transition: 1.2s ease
@@ -127,13 +133,16 @@ li {
 }
 
 .lead {
-    font-size: 1.35rem;
+    font-size: 1.45rem;
+    font-weight: 300;
+    color: #212529;
     padding-bottom: 1rem
 }
 
 .big--white {
+    font-family: 'Permanent Marker', cursive;
     font-size: 2.25rem;
-    font-weight: 700
+    color: #ffffff;
 }
 
 .small--white {
@@ -142,28 +151,27 @@ li {
 
 .navbar-text {
     color: #334A52;
-    font-size: 1.275rem;
-    font-weight: 700
+    font-size: 1.275rem
 }
 
-#intro {
-    height: 70vh
+.section--spacing {
+    padding-top: 15rem;
+    padding-bottom: 7rem
 }
 
-#intro .row {
-    padding-top: 25%
-}
 
 ul {
     list-style: none;
     padding-left: 0px
 }
 
+/*
 .color--back {
     background-image: -o-linear-gradient(left, #4facfe 0%, #00f2fe 100%);
     background-image: -webkit-gradient(linear, left top, right top, from(#4facfe), to(#00f2fe));
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%)
 }
+*/
 
 #about--me {
     padding-top: 10vh;
@@ -176,7 +184,7 @@ ul {
 }
 
 .about--job > p {
-    font-size: 0.85rem
+    font-size: 0.925rem
 }
 
 .about--job {
@@ -184,7 +192,12 @@ ul {
 }
 
 #about--get-in-touch {
-    background-color: #F8F9F9;
-    padding-top: 18vh;
+    background-color: #7048e8;
+    color: #ffffff;
+    padding-top: 12vh;
     padding-bottom: 10vh
+}
+
+#about--get-in-touch a {
+    color: #ffffff
 }
