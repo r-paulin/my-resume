@@ -309,6 +309,7 @@ a.rss-item:hover {
     }
 
     .footer-links {
+        grid-column: 1;
         grid-row: 9;
         text-align: left
     }
