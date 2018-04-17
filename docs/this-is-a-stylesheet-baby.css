@@ -224,10 +224,6 @@ a.rss-item:hover {
     padding-bottom: var(--space)
 }
 
-.pb-5 {
-    padding-bottom: var(--space5x)
-}
-
 .footer-title {
     -ms-flex-item-align: center;
     align-self: center;
