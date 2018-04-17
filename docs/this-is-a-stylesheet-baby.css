@@ -290,6 +290,10 @@ hr {
         grid-column: 1/8
     }
 
+    .intro {
+        padding-top: var(--space5x);
+    }
+
     .about {
         grid-row: 5;
         padding-top: var(--space5x)
