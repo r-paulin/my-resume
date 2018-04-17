@@ -251,21 +251,18 @@ a.rss-item:hover {
     padding-right: 0
 }
 
-
 @media only screen and (min-width: 1365px) {
     .intro,
     .about {
         max-width: 40vw
     }
-
 }
 
 @media only screen and (max-width: 640px) {
-
     .grid,
     .grid-about,
     .story-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     }
 
     .grid,
@@ -291,7 +288,7 @@ a.rss-item:hover {
     }
 
     .intro {
-        padding-top: var(--space5x)
+        padding-top: var(--space)
     }
 
     .about {
