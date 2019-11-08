@@ -94,21 +94,22 @@ a:hover {
 }
 
 #top {
-  background-color: var(--black);
-  color: var(--light);
-  margin-top: 0;
-  align-items: center;
-  padding-top: calc(8 * var(--space));
-  padding-bottom: calc(8 * var(--space));
+    background-color: var(--black);
+    color: var(--light);
+    margin-top: 0;
+    align-items: center;
+    padding-top: calc(8 * var(--space));
+    padding-bottom: calc(8 * var(--space));
 }
 
-.top-img{
-  grid-column: 5/6;
+.top-img {
+    grid-column: 5/6;
 }
 
 .top-img img {
-  max-width: 20vw;
+    max-width: 20vw;
 }
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -138,11 +139,11 @@ a:hover {
 }
 
 .short {
-  grid-column: 2/6;
-  grid-row: 2;
-  padding-top: calc(5 * var(--space));
-  padding-bottom: calc(5 * var(--space));
-  text-align: center;
+    grid-column: 2/6;
+    grid-row: 2;
+    padding-top: calc(5 * var(--space));
+    padding-bottom: calc(5 * var(--space));
+    text-align: center;
 }
 
 .footer-title {
@@ -150,7 +151,6 @@ a:hover {
     align-self: center;
     grid-column: 2/6;
     grid-row: 6;
-    padding-left: 2em;
 }
 
 .footer-links {
@@ -177,21 +177,23 @@ a:hover {
 }
 
 @media only screen and (min-width: 641px) and (max-width: 1023px) {
-.footer-title {
-    grid-row: 1;
-    padding-left: 0;
-}
-.footer-links {
-    grid-row: 2;
-}
-.intro {
-    grid-column: 2/6;
-}
+    .footer-title {
+        grid-row: 1;
+        padding-left: 0;
+    }
 
-.top-img {
-    grid-column: 2/6;
-    max-width: 50vw;
-}
+    .footer-links {
+        grid-row: 2;
+    }
+
+    .intro {
+        grid-column: 2/6;
+    }
+
+    .top-img {
+        grid-column: 2/6;
+        max-width: 50vw;
+    }
 }
 
 
@@ -202,15 +204,15 @@ a:hover {
     }
 
     #top {
-      margin: 0;
-      padding-left: 2em;
-      padding-right: 2em
+        margin: 0;
+        padding-left: 2em;
+        padding-right: 2em
     }
 
     .top-img img {
         max-width: 70vw;
         grid-row: 1;
-      }
+    }
 
     .intro,
     .short,
@@ -226,9 +228,9 @@ a:hover {
     }
 
     .footer-title {
-      grid-column: 1/4;
-      padding-top: calc(2 * var(--space));
-      padding-left: 0
+        grid-column: 1/4;
+        padding-top: calc(2 * var(--space));
+        padding-left: 0
     }
 
     .footer-links {
