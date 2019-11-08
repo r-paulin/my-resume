@@ -103,8 +103,8 @@ a:hover {
   color: var(--light);
   margin-top: 0;
   align-items: center;
-  padding-top: var(--space3x);
-  padding-bottom: var(--space5x);
+  padding-top: calc(2 * var(--space3x));
+  padding-bottom: calc(2 * var(--space3x));
 }
 
 .top-img{
@@ -182,8 +182,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 1365px) {
-    .intro,
-    .about {
+    .intro {
         max-width: 40vw
     }
 }
@@ -191,10 +190,7 @@ a:hover {
 
 @media only screen and (max-width: 640px) {
     .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
-    }
-
-    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         margin: var(--space) var(--space)
     }
 
@@ -207,7 +203,8 @@ a:hover {
     .intro,
     .short,
     .footer-title,
-    .footer-links {
+    .footer-links,
+    .top-img {
         grid-column: 1/8
     }
 
