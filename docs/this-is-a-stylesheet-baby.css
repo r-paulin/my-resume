@@ -1,242 +1,98 @@
-:root {
-    --black: #0A0908;
-    --green: #00A878;
-    --green-dark: #4F4F4F;
-    --grey: #212121;
-    --gray-light: #9E9E9E;
-    --light: #FAFAFA;
-    --space: 1.25em;
-    --primary-font: 'IBM Plex Serif', serif;
-    --secondary-font: 'IBM Plex Sans', sans-serif;
-}
-
-*,
-*:before,
-*:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box
-}
-
-/* End of CSS variables */
-
-body {
-    font-family: var(--secondary-font);
-    font-size: 18px;
-    line-height: 1.6;
-    background-color: var(--light);
-    color: var(--gray);
-    scroll-behavior: smooth;
-    margin: 0
-}
-
-h1,
-.h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6 {
-    color: var(--gray-dark);
-    font-family: var(--primary-font);
-    font-weight: 500;
-    margin-top: 0;
-    margin-bottom: 0.5em
-}
-
-h1 {
-    font-size: 2.15em;
-    margin-bottom: 1em;
-    line-height: 1.33
-}
-
-h2,
-.h2 {
-    font-size: 1.825em
-}
-
-h3 {
-    font-size: 1.625em
-}
-
-h4 {
-    font-size: 1.325em
-}
-
-h5,
-.h5 {
-    font-size: 1.25em;
-    color: var(--green)
-}
-
-h6,
-.h6 {
-    font-size: 1rem
-}
-
-.lead {
-    font-size: 1.25em;
-}
-
-a {
-    color: var(--green)
-}
-
-a:hover {
-    color: var(--green-dark);
-    -webkit-transition: ease;
-    -o-transition: ease;
-    transition: ease;
-}
-
-#top {
-    background-color: var(--black);
-    color: var(--light);
-    margin-top: 0;
-    align-items: center;
-    padding-top: calc(8 * var(--space));
-    padding-bottom: calc(8 * var(--space));
-}
-
-.top-img {
-    grid-column: 5/6;
-}
-
-.top-img img {
-    max-width: 20vw;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-column-gap: var(--space);
-    -webkit-box-pack: left;
-    -ms-flex-pack: left;
-    justify-content: left
-}
-
-.grid {
-    margin-top: calc(5 * var(--space));
-    margin-bottom: calc(5 * var(--space));
-}
-
-.grid:last-child {
-    padding-bottom: calc(5 * var(--space));
-}
-
-.intro {
-    grid-column: 2/4;
-    grid-row: 1;
-    align-items: center;
-}
-
-.intro .h5 {
-    margin-bottom: calc(2 * var(--space))
-}
-
-.short {
-    grid-column: 2/6;
-    grid-row: 2;
-    padding-top: calc(5 * var(--space));
-    padding-bottom: calc(5 * var(--space));
-    text-align: center;
-}
-
-.footer-title {
-    -ms-flex-item-align: center;
-    align-self: center;
-    grid-column: 2/6;
-    grid-row: 6;
-}
-
-.footer-links {
-    -ms-flex-item-align: center;
-    align-self: center;
-    grid-column: 1/6;
-    grid-row: 6;
-    text-align: right;
-    padding-right: 2em;
-}
-
-.footer-links a {
-    padding-right: var(--space)
-}
-
-.footer-links a:last-child {
-    padding-right: 0
-}
-
-@media only screen and (min-width: 1365px) {
-    .intro {
-        max-width: 40vw
-    }
-}
-
-@media only screen and (min-width: 641px) and (max-width: 1023px) {
-    .footer-title {
-        grid-row: 1;
-        padding-left: 0;
-    }
-
-    .footer-links {
-        grid-row: 2;
-    }
-
-    .intro {
-        grid-column: 2/6;
-    }
-
-    .top-img {
-        grid-column: 2/6;
-        max-width: 50vw;
-    }
-}
-
-
-@media only screen and (max-width: 640px) {
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        margin: var(--space) var(--space)
-    }
-
-    #top {
-        margin: 0;
-        padding-left: 2em;
-        padding-right: 2em
-    }
-
-    .top-img img {
-        max-width: 70vw;
-        grid-row: 1;
-    }
-
-    .intro,
-    .short,
-    .footer-title,
-    .footer-links,
-    .top-img {
-        grid-column: 1/8
-    }
-
-    .intro {
-        padding-top: var(--space);
-        grid-row: 2;
-    }
-
-    .footer-title {
-        grid-column: 1/4;
-        padding-top: calc(2 * var(--space));
-        padding-left: 0
-    }
-
-    .footer-links {
-        grid-column: 1;
-        grid-row: 9;
-        text-align: left
-    }
-
-}
+                    :root {
+                       --g300: #11331E;
+                       --g200: #2BA84A;
+                       --g100: #EDF4ED;
+                       --space: 1.25em;
+                       --font: 'Libre Franklin', sans-serif;
+                   }
+                   
+                   *,
+                   *:before,
+                   *:after {
+                       -webkit-box-sizing: border-box;
+                       box-sizing: border-box
+                   }
+                   /* End of CSS variables */
+                   
+                   body {
+                       font-family: var(--font);
+                       font-size: 1.8rem;
+                       font-weight: 500;
+                       line-height: 1.4;
+                       background-color: var(--light);
+                       color: var(--g300);
+                       scroll-behavior: smooth;
+                       margin: 0
+                   }
+                   
+                   h1 {
+                       font-size: 2.15rem;
+                       color: var(--g300);
+                       font-family: var(--font);
+                       font-weight: 600;
+                       margin-bottom: 1em;
+                       line-height: 1.33
+                   }
+                   
+                   a {
+                       color: var(--g200);
+                       font-weight: 600;
+                       font-size: inherit;
+                   }
+                   
+                   a:hover {
+                       color: var(--g300);
+                       -webkit-transition: ease;
+                       -o-transition: ease;
+                       transition: ease;
+                   }
+                   
+                   .grid {
+                       display: grid;
+                       grid-template-columns: 1fr 5fr 2fr;
+                       grid-column-gap: var(--space);
+                       -webkit-box-pack: left;
+                       -ms-flex-pack: left;
+                       justify-content: left;
+                       margin: 2em
+                   }
+                   
+                   .grid {
+                       margin-top: calc(2 * var(--space));
+                       margin-bottom: calc(2 * var(--space));
+                   }
+                   
+                   .grid:last-child {
+                       padding-bottom: calc(2 * var(--space));
+                   }
+                   
+                   .top {
+                       grid-column: 2/3;
+                       grid-row: 1;
+                       align-items: center;
+                   }
+                   
+                   .top-bottom {
+                       font-weight: 500;
+                       font-size: 1.2rem;
+                   }
+                   
+                   .t-4 {
+                       padding-top: calc(4 * var(--space));
+                   }
+                   
+                   @media only screen and (max-width: 640px) {
+                       .grid {
+                           grid-template-columns: 0fr 10fr 0fr;
+                           margin: 1em;
+                       }
+                       body {
+                           font-size: 1.2rem;
+                       }
+                       h1 {
+                           font-size: 2.1rem;
+                       }
+                       .t-4 {
+                           padding-top: calc(2 * var(--space));
+                       }
+                   }
