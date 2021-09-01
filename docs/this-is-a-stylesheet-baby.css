@@ -1,98 +1,100 @@
-                    :root {
-                       --g300: #11331E;
-                       --g200: #2BA84A;
-                       --g100: #EDF4ED;
-                       --space: 1.25em;
-                       --font: 'Libre Franklin', sans-serif;
-                   }
-                   
-                   *,
-                   *:before,
-                   *:after {
-                       -webkit-box-sizing: border-box;
-                       box-sizing: border-box
-                   }
-                   /* End of CSS variables */
-                   
-                   body {
-                       font-family: var(--font);
-                       font-size: 1.8rem;
-                       font-weight: 500;
-                       line-height: 1.4;
-                       background-color: var(--light);
-                       color: var(--g300);
-                       scroll-behavior: smooth;
-                       margin: 0
-                   }
-                   
-                   h1 {
-                       font-size: 2.15rem;
-                       color: var(--g300);
-                       font-family: var(--font);
-                       font-weight: 600;
-                       margin-bottom: 1em;
-                       line-height: 1.33
-                   }
-                   
-                   a {
-                       color: var(--g200);
-                       font-weight: 600;
-                       font-size: inherit;
-                   }
-                   
-                   a:hover {
-                       color: var(--g300);
-                       -webkit-transition: ease;
-                       -o-transition: ease;
-                       transition: ease;
-                   }
-                   
-                   .grid {
-                       display: grid;
-                       grid-template-columns: 1fr 5fr 2fr;
-                       grid-column-gap: var(--space);
-                       -webkit-box-pack: left;
-                       -ms-flex-pack: left;
-                       justify-content: left;
-                       margin: 2em
-                   }
-                   
-                   .grid {
-                       margin-top: calc(2 * var(--space));
-                       margin-bottom: calc(2 * var(--space));
-                   }
-                   
-                   .grid:last-child {
-                       padding-bottom: calc(2 * var(--space));
-                   }
-                   
-                   .top {
-                       grid-column: 2/3;
-                       grid-row: 1;
-                       align-items: center;
-                   }
-                   
-                   .top-bottom {
-                       font-weight: 500;
-                       font-size: 1.2rem;
-                   }
-                   
-                   .t-4 {
-                       padding-top: calc(4 * var(--space));
-                   }
-                   
-                   @media only screen and (max-width: 640px) {
-                       .grid {
-                           grid-template-columns: 0fr 10fr 0fr;
-                           margin: 1em;
-                       }
-                       body {
-                           font-size: 1.2rem;
-                       }
-                       h1 {
-                           font-size: 2.1rem;
-                       }
-                       .t-4 {
-                           padding-top: calc(2 * var(--space));
-                       }
-                   }
+:root {
+    --g300: #11331E;
+    --g200: #2BA84A;
+    --g100: #EDF4ED;
+    --space: 1.25em;
+    --font: 'Libre Franklin', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+
+/* End of CSS variables */
+
+body {
+    font-family: var(--font);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    background-color: var(--light);
+    color: var(--g300);
+    scroll-behavior: smooth;
+    margin: 0
+}
+
+h1 {
+    font-size: 2.15rem;
+    color: var(--g300);
+    font-family: var(--font);
+    font-weight: 600;
+    margin-bottom: 1em;
+    line-height: 1.33
+}
+
+a {
+    color: var(--g200);
+    font-weight: 600;
+    font-size: inherit;
+}
+
+a:hover {
+    color: var(--g300);
+    -webkit-transition: ease;
+    -o-transition: ease;
+    transition: ease;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-column-gap: var(--space);
+    -webkit-box-pack: left;
+    -ms-flex-pack: left;
+    justify-content: left;
+    margin: 2em
+}
+
+.grid {
+    margin-top: calc(2 * var(--space));
+    margin-bottom: calc(2 * var(--space));
+}
+
+.grid:last-child {
+    padding-bottom: calc(2 * var(--space));
+}
+
+.top {
+    grid-column: 2/3;
+    grid-row: 1;
+    align-items: center;
+}
+
+.top-bottom {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.t-4 {
+    padding-top: calc(4 * var(--space));
+}
+
+@media only screen and (max-width: 640px) {
+    .grid {
+        grid-template-columns: 0fr 10fr 0fr;
+        margin: 1em;
+    }
+    body {
+        font-size: 1.2rem;
+    }
+    h1 {
+        font-size: 2.1rem;
+    }
+    .t-4 {
+        padding-top: calc(2 * var(--space));
+    }
+}
